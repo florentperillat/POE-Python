@@ -1,7 +1,7 @@
 x = "Hello World!"
 print(x)
 n = 3.14
-print(f"Ceci est le nombre pi :{n}");
+print(f"Ceci est le nombre pi :{n}")
 
 def add(i,j):
     return i+j
@@ -39,6 +39,10 @@ l.append(99)
 l.remove(99)
 for i in l:
     print(i)
+
+print(sum(l,10))
+print(min(l,10))
+print(max(l,10))
 
 #sum
 
@@ -84,10 +88,16 @@ def ave(list, n):
 
 def primeNumbers(list):
     index = 0
-    primeList = {}
+    primeList = []
     for i in list:
         if isPrime(list[i]):
             primeList[index] = list[i]
             index = index+1
 
 #inverse
+
+def invertList(list):
+    for i in list, -1:
+        temp = list[i]
+        del list[i]
+        list.add(temp)
